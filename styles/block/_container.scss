@@ -1,0 +1,41 @@
+.container {
+  @include base-grid(
+    100vh,
+    1,
+1fr 1.8fr 0.2fr,
+"top" "mid" "footer",
+    0.5rem
+  );
+
+  @include tablet {
+    @include base-grid(
+      100vh,
+      2,
+      1fr 1.8fr 0.2fr,
+"top top" "mid mid" "footer footer",
+      0.5rem
+    );
+  }
+
+  @include desktop {
+    @include base-grid(
+      100vh,
+      4,
+      1fr 1.8fr 0.2fr,
+"top top top top" "mid mid mid mid"
+        "footer footer footer footer",
+      0.5rem
+    );
+  }
+
+  @include large {
+    @include base-grid(
+      100vh,
+      4,
+1fr 1.8fr 0.2fr,
+"top top top top top"
+        "mid mid mid mid mid" "footer footer footer footer footer",
+      0.5rem
+    );
+  }
+}

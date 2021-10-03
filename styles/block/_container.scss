@@ -1,4 +1,6 @@
 .container {
+  scroll-behavior: smooth;
+  
   @include base-grid(
     100vh,
     1,

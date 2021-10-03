@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,900);
 .container {
+  scroll-behavior: smooth;
   display: -ms-grid;
   display: grid;
   height: 100vh;
